@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TenChem India Quotation Generator</title>
+    <title>TechChem India Quotation Generator</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <script>
       tailwind.config = {
         theme: {
@@ -15,7 +16,7 @@
             },
             colors: {
               brand: {
-                orange: '#ea580c', // TenChem Orange (Matches the catalog)
+                orange: '#ea580c', // TenChem Orange 
                 dark: '#1e293b',   // Dark Slate/Grey for contrast
                 gray: '#64748b',   // Secondary Text
                 light: '#fff7ed',  // Very light orange background
@@ -25,6 +26,7 @@
         }
       }
     </script>
+    
     <style>
       :root {
         color-scheme: light;
@@ -44,21 +46,29 @@
         background: #94a3b8;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.1/",
-    "react": "https://aistudiocdn.com/react@^19.2.1",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
-    "jspdf": "https://aistudiocdn.com/jspdf@^3.0.4",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
-    "papaparse": "https://aistudiocdn.com/papaparse@^5.5.3",
-    "jspdf-autotable": "https://aistudiocdn.com/jspdf-autotable@^5.0.2"
-  }
-}
-</script>
-</head>
+    
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://aistudiocdn.com/react@^19.2.1/",
+        "react": "https://aistudiocdn.com/react@^19.2.1",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+        "jspdf": "https://aistudiocdn.com/jspdf@^3.0.4",
+        "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+        "papaparse": "https://aistudiocdn.com/papaparse@^5.5.3",
+        "jspdf-autotable": "https://aistudiocdn.com/jspdf-autotable@^5.0.2",
+        
+        // **CRITICAL FIX: Define the path to your main application file**
+        "app-main": "/Ten-Chem-India/main.js" 
+      }
+    }
+    </script>
+  </head>
   <body class="bg-slate-50 text-slate-800">
     <div id="root"></div>
+    
+    <script type="module">
+      import "/Ten-Chem-India/main.js";
+    </script>
   </body>
 </html>
